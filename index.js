@@ -6,9 +6,8 @@ var async = require('async')
 var db = level('data.db', { valueEncoding: 'json' })
 var baseURL = 'http://sfbay.craigslist.org'
 var urls = [
-  '/search/apa/eby?query=cottage&zoomToPosting=&srchType=A&minAsk=&maxAsk=&bedrooms=',
-  '/search/apa/eby?query=cabin&zoomToPosting=&srchType=A&minAsk=&maxAsk=&bedrooms=',
-  '/search/apa/eby?query=dome&zoomToPosting=&srchType=A&minAsk=&maxAsk=&bedrooms='
+  '/search/bia/sfc?catAbb=bia&query=shogun&zoomToPosting=&minAsk=&maxAsk=',
+  '/search/bia/eby?catAbb=bia&query=shogun&zoomToPosting=&minAsk=&maxAsk='
 ]
 
 var queue = async.queue(function(listing, cb) {
