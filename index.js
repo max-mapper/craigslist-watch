@@ -1,7 +1,9 @@
+var port = process.env.PORT || 8080
+
 var craigslist = require('craigslist')
 var url = require('url')
 var level = require('level')
-var http = require('http').createServer(serve).listen(8080)
+var http = require('http').createServer(serve).listen(port)
 var async = require('async')
 var db = level('data.db', { valueEncoding: 'json' })
 var baseURL = 'http://sfbay.craigslist.org'
