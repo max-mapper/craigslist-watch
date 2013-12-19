@@ -10,7 +10,7 @@
   "author": "",
   "license": "BSD",
   "dependencies": {
-    "craigslist": "maxogden/craigslist#fixes",
+    "craigslist": "git://github.com/maxogden/craigslist.git#fixes",
     "level": "~0.10.0",
     "async": "~0.2.9"
   }
